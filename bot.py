@@ -5,6 +5,8 @@ import asyncio
 import chalk
 import os
 import random
+import json
+import urllib.request
 
 bot = commands.Bot(command_prefix="$")
 
@@ -26,6 +28,12 @@ async def on_member_join(member: discord.Member):
 @bot.command(pass_context=True)
 async def ping(ctx):
     await bot.say("STAHP IT!")
+    
+@bot.command(pass_context=True)
+async def get_release(ctx):
+    with urllib.request.open('https://theangelreturns.aliceos.app/release.json') as release_json:
+        release_data = json.loads(release_json.read().decode())
+        await bot.say("The latest release is `" + release_data["beta.build"] + "`")
 
 @bot.command(pass_context=True)
 async def ask(ctx, question):
