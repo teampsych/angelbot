@@ -31,7 +31,7 @@ async def ping(ctx):
     
 @bot.command(pass_context=True)
 async def get_release(ctx):
-    with urllib.request.open('https://theangelreturns.aliceos.app/release.json') as release_json:
+    with urllib.request.urlopen('https://theangelreturns.aliceos.app/release.json') as release_json:
         release_data = json.loads(release_json.read().decode())
         await bot.say("The latest release is `" + release_data["beta.build"] + "`")
 
