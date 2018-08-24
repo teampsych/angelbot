@@ -46,7 +46,9 @@ async def ask(ctx, question):
     elif "Monika" in question or "biggest fan" in question or "fan" in question:
         possible_responses = ["Well, I certainly never expected for Monika to like me so much...", "It's both Monika and TZKU that like me. A lot.", "The fan situation's a bit complicated, ehehe~"]
     elif "Where's Boris?" in question:
-        possible_responses = ["https://cdn.discordapp.com/attachments/481922610742165514/482312409831309315/Alice_Maymay_2.png"]
+        possible_responses = ["https://cdn.discordapp.com/attachments/481922610742165514/482312409831309315/Alice_Maymay_2.png "]
+    elif "qt" in question or "You're a Qt" in question or "Qt" in question or "you" and "qt" in question:
+        possible_responses = ["I NIOT QT!"]
     else:
         possible_responses = ["What the hell are you saying?", "Uh, I know I know programming and all, but I don't understand your question...", "Are you even speaking English?", "Sorry, I don't understand.", ":Uwaa:", "I may be an AI now, but that doesn't mean I've properly implanted myself into Discord. Please understand that I would be more than happy to answer your questions, it's just that I can't properly express them here."]
     await bot.say(random.choice(possible_responses))
