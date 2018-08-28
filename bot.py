@@ -10,7 +10,7 @@ async def on_ready():
     await bot.change_presence(game=discord.Game(name='Pizza... | v0.0'))
     for channel in member.server.channels:
         if channel.name == 'general' or channel.name == 'breakroom' or channel.name == 'announcements'
-            await bot.send_message(channel, "Hi, guys! I'm just getting everything warmed up here, ehehe~!")
+            await bot.send_message(channel, "Hi, guys! There is no commands for me yet, I'm more like a useless piece of furniture for now, ehehe~!")
     
 @bot.command()
 async def greet(ctx):
