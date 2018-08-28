@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-from discord.ext.commands import Bot
 import asyncio
 import chalk
 import os
@@ -8,14 +7,14 @@ import random
 import json
 import urllib.request
 
-bot = commands.Bot(command_prefix="$")
+bot = commands.Bot(command_prefix="p.")
 
 @bot.event
 async def on_ready():
     print("Running")
-    await bot.change_presence(game=discord.Game(name='Doki Doki: The Angel Returns'))
+    await bot.change_presence(game=discord.Game(name='Pizza...'))
     for channel in member.server.channels:
-        if channel.name == 'general' or channel.name == 'breakroom':
+        if channel.name == 'general' or channel.name == 'breakroom' or channel.name == 'announcements'
             await bot.send_message(channel, "Hi, guys! I'm just getting everything warmed up here, ehehe~!")
     
 
