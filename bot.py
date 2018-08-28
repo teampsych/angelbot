@@ -53,4 +53,5 @@ async def ask(ctx, question):
         possible_responses = ["What the hell are you saying?", "Uh, I know I know programming and all, but I don't understand your question...", "Are you even speaking English?", "Sorry, I don't understand.", ":Uwaa:", "I may be an AI now, but that doesn't mean I've properly implanted myself into Discord. Please understand that I would be more than happy to answer your questions, it's just that I can't properly express them here."]
     await bot.say(random.choice(possible_responses))
 
-bot.run('BOT_TOKEN')
+bot.run('NDgzODM1NTgyMzE4MTE2ODY2.DmbUtQ.uHK9jLrtrGLT12q9ONdcSIhijGg')
+
