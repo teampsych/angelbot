@@ -1,11 +1,6 @@
 import discord
 from discord.ext import commands
-import asyncio
-import chalk
-import os
-import random
-import json
-import urllib.request
+
 
 bot = commands.Bot(command_prefix="p.")
 
